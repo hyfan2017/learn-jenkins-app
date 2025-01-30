@@ -20,9 +20,9 @@ pipeline {
                 '''
             }
         }
-        stage {
+        stage('Test') {
             steps {
-                sh 'test -f index.html'
+                sh 'test -f build/index.html'
             }
         }
     }
